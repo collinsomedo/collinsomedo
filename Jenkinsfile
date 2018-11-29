@@ -19,7 +19,7 @@ pipeline {
                                ],
                                transfers: [
                                    sshTransfer(
-                                       execCommand: 'mkdir /tmp/kolo_home5' && git clone 'https://github.com/collinsomedo/collinsomedo.git /tmp/kolo_home6' 
+                                       execCommand: mkdir '/tmp/kolo_home6' && cd '/tmp/kolo_home6' git clone 'https://github.com/collinsomedo/collinsomedo.git /tmp/kolo_home6' 
                                    )
                                ]
                            )
